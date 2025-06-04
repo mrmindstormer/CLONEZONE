@@ -13,6 +13,6 @@ html {
     src: url('../fonts/Starjedi.ttf') format('truetype');
 }
 
-body {
+.container {
     font-family: 'Starjedi', Arial, sans-serif;
 }
