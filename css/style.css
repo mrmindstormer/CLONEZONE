@@ -16,3 +16,28 @@ html {
 .container {
     font-family: 'Starjedi', Arial, sans-serif;
 }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  padding: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+nav li:hover {
+  text-decoration: underline;
+}

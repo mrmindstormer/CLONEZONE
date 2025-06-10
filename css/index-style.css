@@ -1,4 +1,26 @@
-head {
-    background: #000000 url(../img/Header-1.jpg) no-repeat center;
-    
+header {
+    background: #000000 url(../img/Header-1.jpg) no-repeat top;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
+
+h1 {
+    font-family: 'Starjedi', Arial, sans-serif;
+    font-size: 7.5vw;  
+    padding-top: 0;     
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  margin-top: 100vh;
+  background-color: white;
+  height: 200vh;
+}
+
