@@ -1,0 +1,99 @@
+body {
+    background-color: #0a0a20;
+    color: #e0e0e0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+header {
+    color: #e8b923;
+    padding-bottom: 10px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+header h1 {
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: none;
+    border-bottom: 1px solid #4d9be6;
+}
+
+
+.subtitle {
+    color: #4d9be6;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Starjedi', Arial, sans-serif;
+    font-style: italic;
+}
+
+.contact-form {
+    background: rgba(11, 61, 145, 0.1);
+    padding: 20px;
+    border: 1px dashed #e8b923;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-transform: lowercase;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e8b923;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #4d9be6;
+    color: white;
+}
+
+.blaster-btn {
+    background: #e8b923;
+    color: #0a0a20;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+
+.blaster-btn:hover {
+    background: #ff0000;
+    transform: scale(1.05);
+}
+.other-contacts {
+    margin-top: 40px;
+}
+
+.contact-method {
+    margin-bottom: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.highlight {
+    color: #e8b923;
+    font-weight: bold;
+}
+
+.searchbar{
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}

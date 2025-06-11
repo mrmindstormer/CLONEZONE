@@ -4,29 +4,86 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kontakt</title>
+        <title>CLONEZONE | Kontakt</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/contact-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
     </head>
 
-    <body>
+<body>
 
-        <div id="nav-placeholder"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startseite</a>
+                </li>
+                <li><a href="products.html">Produkte</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Rüstung</a></li>
+                        <li><a href="#">Waffen</a></li>
+                        <li><a href="#">Fahrzeuge</a></li>
+                        <li><a href="#">Sonstiges</a></li>
+                    </ul>
+                <li><a href="about.html">Über Uns</a></li>
+                <li><a href="QandA.html">Q&A</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <form class="searchbar">
+                <input type="text" placeholder="Suche...">
+                <button type="submit" class="search-btn" aria-label="Suche">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                    <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+            </form>
+        </nav>
 
-        <script>
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                });
-        </script>
-    
-        <div class="container">
-            <h1>Willkommen bei CLONEZONE - contact</h1>
-            <p>Hier ist der Inhalt der Seite.</p>
-            <p>Dies ist ein Beispieltext, um den Inhalt zu demonstrieren.</p>
-        </div>
-    
-    </body>
+    <div class="container">
+        <header>
+            <h1>Kontakt zur Kommandozentrale</h1>
+            <p class="subtitle">"ein Klon meldet sich nie allein - wir Antworten Innerhalb von 0,5 parsecs"</p>
+        </header>
+
+        <section class="contact-form">
+            <h2>holonet-nachricht senden</h2>
+            <form>
+                <div class="form-group">
+                    <label for="clone-id">klon-id#</label>
+                    <input type="text" id="clone-id" placeholder="ct-xxxx..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">prioritätsstufe</label>
+                    <select id="priority" required>
+                        <option value="">-- Auswählen --</option>
+                        <option value="low">standard (kein dringender einsatz)</option>
+                        <option value="high">priorität (kampfauftrag läuft)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">nachricht</label>
+                    <textarea id="message" placeholder="Deine Nachricht an die Kommandozentrale..." required></textarea>
+                </div>
+
+                <button type="submit" class="blaster-btn">nachricht absenden</button>
+            </form>
+        </section>
+
+        <section class="other-contacts">
+            <h2>alternative kontaktwege</h2>
+            <div class="contact-method">
+                <h3>droiden-hotline</h3>
+                <p>r2-unit kommunikator: <span class="highlight">kc-842-7553</span></p>
+            </div>
+            <div class="contact-method">
+                <h3>imperiale post</h3>
+                <p>adresse: <span class="highlight">kamino prime, tipoca city, lagerhalle 7</span></p>
+            </div>
+        </section>
+    </div>
+</body>
 
 </html>

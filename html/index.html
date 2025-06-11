@@ -7,35 +7,109 @@
         <title>CLONEZONE</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/index-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
     </head>
 
     <body>
 
-        <div id="nav-placeholder"></div>
-
-        <script>
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                });
-        </script>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startseite</a>
+                </li>
+                <li><a href="products.html">Produkte</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Rüstung</a></li>
+                        <li><a href="#">Waffen</a></li>
+                        <li><a href="#">Fahrzeuge</a></li>
+                        <li><a href="#">Sonstiges</a></li>
+                    </ul>
+                <li><a href="about.html">Über Uns</a></li>
+                <li><a href="QandA.html">Q&A</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <form class="searchbar">
+                <input type="text" placeholder="Suche...">
+                <button type="submit" class="search-btn" aria-label="Suche">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                    <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+            </form>
+        </nav>
 
         <header>
 
             <h1>clonezone</h1>
+            <svg class="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
+                <circle fill="none" stroke="currentColor" stroke-width="31.8518" cx="300" cy="300" r="284.0741"/>
+                <circle cx="300" cy="300" r="93.2122"/><g id="Half"><g id="Elmt">
+                <path d="M164.331,122.014A223.797,223.797 0 0,1 270.077,78.2125
+                V48.1605A253.611,253.611 0 0,0 143.081,100.764Z"/>
+                <path fill="currentColor" stroke="currentColor" stroke-width="38.881" d="M300,300v187.968"/>
+                </g><use xlink:href="#Elmt" transform="rotate(45,300,300)"/>
+                <use xlink:href="#Elmt" transform="rotate(90,300,300)"/>
+                <use xlink:href="#Elmt" transform="rotate(135,300,300)"/></g>
+                <use xlink:href="#Half" transform="rotate(180,300,300)"/>
+            </svg>
 
         </header>
             
         <main>
 
-            <div class="container">
-                <h1>Willkommen bei CLONEZONE</h1>
-                <p>Hier ist der Inhalt der Seite.</p>
-                <p>Dies ist ein Beispieltext, um den Inhalt zu demonstrieren.</p>
+            <section class="hero">
+                <h2>Willkommen bei <span class="starjedi-font">clonezone</span></h2>
+                <p>Du brauchst neue Rüstung, Waffen oder Fahrzeuge?<br>Hier ist für jeden Clone etwas dabei!</p>
+            </section>
+
+            <section class="Produkte">
+                <h3>Welche Art von Ausrüstung suchst du?</h3>
+                <table class="produkt-tabelle">
+                    <tr>
+                        <td>
+                            <a href="products.html#ruestung" class="produkt-link">
+                                <p>Rüstung</p>
+                                <img id="Helm" src="../img/Startseitenauswahl/Helm.png" alt="Phase 2 Helm 501st Legion">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="products.html#waffen" class="produkt-link">
+                                <p>Waffen</p>
+                                <img src="../img/Startseitenauswahl/Blaster.webp" alt="DC-17 Blaster">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="products.html#fahrzeuge" class="produkt-link">
+                                <p>Fahrzeuge</p>
+                                <img src="../img/Startseitenauswahl/Sternenjäger.png" alt="ARC-170 Sternenjäger">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="products.html#sonstiges" class="produkt-link">
+                                <p>Sonstiges</p>
+                                <img src="../img/Startseitenauswahl/Spinnendroide.png" alt="Spinnendroide">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <div class="slide-in-text" id="infoBox">
+              <p>Hier ist dein Textblock, der von der Seite hereinschiebt!</p>
             </div>
 
         </main>
+
+        <footer>
+            <p><span class="starjedi-font">&copy; 2023 clonezone</span> - Alle Rechte vorbehalten.</p>
+            <p><a href="contact.html">Kontakt</a> | <a href="about.html">Über Uns</a></p>
+        </footer>
+
+        <script src="../script/slide-in-text.js"></script>
             
     </body>
 

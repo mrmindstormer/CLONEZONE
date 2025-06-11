@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLONEZONE | Q&A</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/Q&A.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    </head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Startseite</a>
+            </li>
+            <li><a href="products.html">Produkte</a>
+                <ul class="dropdown">
+                    <li><a href="#">Rüstung</a></li>
+                    <li><a href="#">Waffen</a></li>
+                    <li><a href="#">Fahrzeuge</a></li>
+                    <li><a href="#">Sonstiges</a></li>
+                </ul>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="QandA.html">Q&A</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <form class="searchbar">
+            <input type="text" placeholder="Suche...">
+            <button type="submit" class="search-btn" aria-label="Suche">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Häufige Fragen</h1>
+            <p class="subtitle">"CT-3PX hier, ich habe 78<span class="percent">%</span> aller nutzeranfragen vorab beantwortet."</p>
+        </header>
+
+        <section class="faq-section">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Wie schnell ist der Versand?
+                </button>
+                <div class="faq-answer">
+                    <p>Standardlieferung innerhalb von 1-3 Standardtagen (außer in Kampfgebieten). Prioritäts-Lieferungen mit LAAT/I-Transporter erreichen dich in unter 12 Stunden.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Kann ich meine Rüstung Personalisieren?
+                </button>
+                <div class="faq-answer">
+                    <p>Ja! Wähle zwischen Legionenfarben (501st Blau, 212th Orange) oder füge deine eigene Einheitennummer hinzu. Sonderlackierungen kosten 50 credits extra.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Was tun bei Defekter Ausrüstung?
+                </button>
+                <div class="faq-answer">
+                    <p>Melde dich über unser <a href="contact.html"><span class="holo-chat">Notfallprotokoll</span></a>. Unser Reparaturdroide K-2XO kommt dann direkt zu deiner Einheit (Vorort-Service: zusätzlich 200 credits).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Akzeptiert wir Republikanische Kredits?
+                </button>
+                <div class="faq-answer">
+                    <p>Nur Imperial Credits oder Cryptocurrency (wie beskar-token). Tauschkurse: 1 Credit <span class="percent">=</span> 2 Portionspackungen Kamino-Proteinration.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Kann ich meine Ausrüstung zurückgeben?
+                </button>
+                <div class="faq-answer">
+                    <p>Rückgaben sind innerhalb von 14 Tagen nach Erhalt möglich, sofern die Ware unbeschädigt ist. Phase-II-Rüstungen mit personalisierten Lackierungen können nur gegen Aufpreis von 100 Credits umgetauscht werden. Bitte nutze unser <a href="contact.html"><span class="holo-chat">Rückgabeportal</span></a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="icon">+</span> Wie pflege ich meine Klon-Rüstung?
+                </button>
+                <div class="faq-answer">
+                    <p>1. Reinige die Rüstung nach jedem Einsatz mit Kaminoanischem Poliermittel<br>
+                    2. Vermeide Sandkontakt (besonders auf Geonosis!)<br>
+                    3. Öle die Gelenke wöchentlich mit Droiden-Öl<br>
+                    4. Lagere sie trocken und vor direkter Sonneneinstrahlung geschützt<br>
+                    Unser <a href="#"><span class="holo-chat">Wartungsprotokoll</span></a> enthält weitere Details.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <h2>brauchst du noch weitere hilfe?</h2>
+            <p>
+                Unser CT-Support ist Rund um die Uhr per
+                <a href="contact.html"><span class="holo-chat">Holo-Chat</span></a>
+                erreichbar. Durchschnittliche Wartezeit: 2,7 Parsecs.
+            </p>
+            <img src="../img/ct-support-droid.png" alt="ct-support droide" class="droid-icon">
+        </section>
+    </div>
+
+    <script src="../script/faq.js"></script>
+</body>
+</html>

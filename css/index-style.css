@@ -1,26 +1,171 @@
-header {
-    background: #000000 url(../img/Header-1.jpg) no-repeat top;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-}
-
-h1 {
-    font-family: 'Starjedi', Arial, sans-serif;
-    font-size: 7.5vw;  
-    padding-top: 0;     
+body {
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 main {
   position: relative;
   z-index: 2;
-  margin-top: 100vh;
-  background-color: white;
-  height: 200vh;
+  min-height: 100vh;
+  padding-bottom: 80px;
 }
 
+header {
+  background: #000000 url(../img/header/Hintergrund.jpg) no-repeat top;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  flex-direction: column;
+}
+
+
+header h1 {
+  font-family: 'Starjedi', Arial, sans-serif;
+  font-size: 7vw;  
+  padding: 0; 
+  color: #e8b923;
+  margin-left: 2vw;
+}
+
+.Icon {
+  fill:#e8b923;
+  color:#e8b923;
+  margin-left: 4vw;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
+nav {
+  margin-top: 100vh;
+}
+
+.hero {
+  padding-top: 100px;
+  text-align: center;
+  color: #e8b923; 
+}
+
+.hero h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #4d9be6;
+}
+
+.starjedi-font {
+  font-family: 'Starjedi', Arial, sans-serif;
+}
+
+.Produkte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Produkte h3 {
+  color: #4d9be6;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Starjedi', Arial, sans-serif;
+  font-style: italic;
+}
+
+.Produkte td p {
+  font-size: 1.5rem;
+  color: #e8b923;
+  margin: 20px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Produkte table {
+  width: 50%;
+  margin-top: 20px;
+  border-spacing: 30px;
+}
+
+.Produkte tr {
+  background-color: #1a1a3a;
+  color: #e8b923;
+  height: 200px;
+}
+
+.Produkte td {
+  border: #e8b923 1px dashed;
+  border-radius: 5px;
+  padding-top: 20px;
+  height: 200px;
+}
+
+.Produkte td img {
+  width: 180px;         
+  height: 180px;       
+  object-fit: contain;  
+  display: block;
+  margin: 0 auto;
+}
+
+#Helm {
+  transform: scale(0.7);
+}
+
+.Produkte td:hover {
+  background-color:  #4d9be6;
+}
+
+.produkt-link {
+  text-decoration: none;
+}
+
+.produkt-link:hover {
+  background: #4d9be6;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer {
+  border-top:#4d9be6 1px solid;
+  color: #e8b923;
+  z-index: 2;
+  background-color: #1a1a3a;
+  position: relative;
+  padding: 20px;
+}
+
+footer a {
+  color: #e8b923;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #4d9be6;
+}
+
+.slide-in-text {
+  position: fixed;
+  top: 30%;
+  right: -400px; /* Start außerhalb des Bildschirms */
+  width: 300px;
+  background: #1a1a3a;
+  color: #e8b923;
+  padding: 24px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  transition: right 0.7s cubic-bezier(.77,0,.18,1);
+  z-index: 99;
+}
+
+.slide-in-text.visible {
+  right: 0;
+}

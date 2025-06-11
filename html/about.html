@@ -4,29 +4,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Über uns</title>
+        <title>CLONEZONE | Über Uns</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/about-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
     </head>
 
-    <body>
+<body>
 
-        <div id="nav-placeholder"></div>
+    <header>
+        <p>Seit 22 BBY der Vertrauenswürdigste Ausrüster der großen Armee der Republik.</p>
+    </header>
 
-        <script>
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                });
-        </script>
+    <nav>
+        <ul>
+            <li>
+                    <a href="index.html">Startseite</a>
+            </li>
+            <li><a href="products.html">Produkte</a>
+                <ul class="dropdown">
+                        <li><a href="#">Rüstung</a></li>
+                        <li><a href="#">Waffen</a></li>
+                        <li><a href="#">Fahrzeuge</a></li>
+                        <li><a href="#">Sonstiges</a></li>
+                </ul>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="QandA.html">Q&A</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <form class="searchbar">
+            <input type="text" placeholder="Suche...">
+            <button type="submit" class="search-btn" aria-label="Suche">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </form>
+    </nav>
 
-        <div class="container">
-            <h1>Willkommen bei CLONEZONE - about</h1>
-            <p>Hier ist der Inhalt der Seite.</p>
-            <p>Dies ist ein Beispieltext, um den Inhalt zu demonstrieren.</p>
-        </div>
-    
-    </body>
+    <div class="container">
+        <section class="mission-section">
+            <h1>Mission von Clonezone</h1>
+            <p>Clonezone wurde von einem Team ehemaliger Klon-Kommandoeinheiten gegründet, die es leid waren, im Kampf von minderwertiger Ausrüstung behindert zu werden. Unser Ziel: Jeder Klon verdient eine Rüstung, die so widerstandsfähig ist wie sein Wille!</p>
+        </section>
 
+        <section class="sources-section">
+            <h2>Unsere Quellen</h2>
+            <p>Ob Phase-I-Rüstungen direkt aus den kaminoanischen Fertigungshallen, mandalorianisches Zubehör von traditionsreichen Schmieden oder lizenzierte Blaster der BlasTech Industries – jeder Artikel im Clonezone durchläuft unser strenges Prüfprotokoll. Unser Droiden-Inspektor CT-4PX (zertifiziert durch die Große Armee der Republik) testet jedes Produkt auf Kampftauglichkeit, Haltbarkeit und Eignung für extreme Einsatzbedingungen. Nur was seinen Standards entspricht, erhält das Clonezone-Gütesiegel und landet in euren Händen.</p>
+        </section>
+
+        <section class="team-section">
+            <h2>Unser Team</h2>
+            <div class="team-member">
+                <h3>CT-8911 "Merchant"</h3>
+                <p>CEO, Ex-Klon-Versorgungsoffizier – verantwortlich für Logistik. Hat nie eine Lieferung verspätet, nicht mal während der Schlacht von Geonosis.</p>
+            </div>
+            <div class="team-member">
+                <h3>Mira Talis</h3>
+                <p>Ex-CIS-Droiden-Ingenieurin – reparierte früher Kampfdroiden, jetzt optimiert sie unsere Bestellsysteme.</p>
+            </div>
+        </section>
+    </div>
+</body>
 </html>
