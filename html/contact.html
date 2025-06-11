@@ -41,49 +41,49 @@
         </nav>
 
     <div class="container">
-        <header>
-            <h1>Kontakt zur Kommandozentrale</h1>
-            <p class="subtitle">"ein Klon meldet sich nie allein - wir Antworten Innerhalb von 0,5 parsecs"</p>
-        </header>
+    <header>
+        <h1>Kontakt zur Kommandozentrale</h1>
+        <p class="subtitle">"ein Klon meldet sich nie allein - wir Antworten Innerhalb von 0,5 parsecs"</p> <!-- Untertitel, per CSS besonders gestylt -->
+    </header>
 
-        <section class="contact-form">
-            <h2>holonet-nachricht senden</h2>
-            <form>
-                <div class="form-group">
-                    <label for="clone-id">klon-id#</label>
-                    <input type="text" id="clone-id" placeholder="ct-xxxx..." required>
-                </div>
-
-                <div class="form-group">
-                    <label for="priority">prioritätsstufe</label>
-                    <select id="priority" required>
-                        <option value="">-- Auswählen --</option>
-                        <option value="low">standard (kein dringender einsatz)</option>
-                        <option value="high">priorität (kampfauftrag läuft)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">nachricht</label>
-                    <textarea id="message" placeholder="Deine Nachricht an die Kommandozentrale..." required></textarea>
-                </div>
-
-                <button type="submit" class="blaster-btn">nachricht absenden</button>
-            </form>
-        </section>
-
-        <section class="other-contacts">
-            <h2>alternative kontaktwege</h2>
-            <div class="contact-method">
-                <h3>droiden-hotline</h3>
-                <p>r2-unit kommunikator: <span class="highlight">kc-842-7553</span></p>
+    <section class="contact-form"> <!-- Bereich für das Kontaktformular -->
+        <h2>holonet-nachricht senden</h2>
+        <form>
+            <div class="form-group">
+                <label for="clone-id">klon-id#</label>
+                <input type="text" id="clone-id" placeholder="ct-xxxx..." required> <!-- Eingabefeld für Klon-ID (Pflichtfeld) -->
             </div>
-            <div class="contact-method">
-                <h3>imperiale post</h3>
-                <p>adresse: <span class="highlight">kamino prime, tipoca city, lagerhalle 7</span></p>
+
+            <div class="form-group">
+                <label for="priority">prioritätsstufe</label>
+                <select id="priority" required> <!-- Dropdown für Prioritätsstufe (Pflichtfeld) -->
+                    <option value="">-- Auswählen --</option>
+                    <option value="low">standard (kein dringender einsatz)</option>
+                    <option value="high">priorität (kampfauftrag läuft)</option>
+                </select>
             </div>
-        </section>
-    </div>
+
+            <div class="form-group">
+                <label for="message">nachricht</label>
+                <textarea id="message" placeholder="Deine Nachricht an die Kommandozentrale..." required></textarea> <!-- Feld für Nachricht (Pflichtfeld) -->
+            </div>
+
+            <button type="submit" class="blaster-btn">nachricht absenden</button> <!-- Button mit spezifischem Styling -->
+        </form>
+    </section>
+
+    <section class="other-contacts"> <!-- Bereich für andere Kontaktwege -->
+        <h2>alternative kontaktwege</h2>
+        <div class="contact-method">
+            <h3>droiden-hotline</h3>
+            <p>r2-unit kommunikator: <span class="highlight">kc-842-7553</span></p> <!-- Nummer durch CSS hervorgehoben -->
+        </div>
+        <div class="contact-method">
+            <h3>imperiale post</h3>
+            <p>adresse: <span class="highlight">kamino prime, tipoca city, lagerhalle 7</span></p> <!-- Adresse per CSS hervorgehoben -->
+        </div>
+    </section>
+</div>
 </body>
 
 </html>

@@ -1,80 +1,80 @@
 body {
     background-color: #0a0a20;
-    color: #e0e0e0;
-    font-family: "Poppins", Arial, sans-serif;
+    color: #e0e0e0; 
+    font-family: "Poppins", Arial, sans-serif; 
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    text-transform: capitalize;
+    text-transform: capitalize; /* Erster Buchstabe jedes Wortes groß */
 }
 
 header {
-    color: #e8b923;
+    color: #e8b923; 
     padding-bottom: 10px;
     font-family: "Poppins", Arial, sans-serif;
 }
 
 header h1 {
     font-family: "Poppins", Arial, sans-serif;
-    text-transform: none;
-    border-bottom: 1px solid #4d9be6;
+    text-transform: none; /* Keine automatische Großschreibung */
+    border-bottom: 1px solid #4d9be6; 
 }
 
 
 .subtitle {
-    color: #4d9be6;
-    text-align: center;
-    text-transform: lowercase;
-    font-family: 'Starjedi', Arial, sans-serif;
-    font-style: italic;
+    color: #4d9be6; 
+    text-align: center; 
+    text-transform: lowercase; /* Alles klein */
+    font-family: 'Starjedi', Arial, sans-serif; 
+    font-style: italic; /* Kursiv */
 }
 
 .contact-form {
-    background: rgba(11, 61, 145, 0.1);
+    background: rgba(11, 61, 145, 0.1); /* Halbtransparentes Blau */
     padding: 20px;
-    border: 1px dashed #e8b923;
-    border-radius: 5px;
+    border: 1px dashed #e8b923; /* Gelbe gestrichelte Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
     margin: 30px 0;
 }
 
 .form-group {
     margin-bottom: 15px;
-    text-transform: lowercase;
+    text-transform: lowercase; /* Alles klein */
 }
 
 label {
-    display: block;
+    display: block; /* Block-Element für bessere Lesbarkeit */
     margin-bottom: 5px;
-    color: #e8b923;
+    color: #e8b923; 
 }
 
 input, select, textarea {
     width: 100%;
     padding: 8px;
-    background: rgba(0,0,0,0.5);
-    border: 1px solid #4d9be6;
-    color: white;
+    background: rgba(0,0,0,0.5); 
+    border: 1px solid #4d9be6; 
+    color: white; /* Weißer Text */
 }
 
 .blaster-btn {
-    background: #e8b923;
+    background: #e8b923; 
     color: #0a0a20;
     border: none;
     padding: 10px 20px;
     font-family: "Poppins", Arial, sans-serif;
     cursor: pointer;
-    transition: all 0.3s;
-    text-transform: capitalize;
+    transition: all 0.3s; /* Weiche Übergänge bei Hover-Effekt */
+    text-transform: capitalize; /* Erster Buchstabe groß */
 }
 
 .blaster-btn:hover {
-    background: #ff0000;
-    transform: scale(1.05);
+    background: #ff0000; /* Rot beim Überfahren */
+    transform: scale(1.05); /* Leichtes Vergrößern */
 }
-.other-contacts {
+.other-contacts {   
     margin-top: 40px;
 }
 
@@ -85,14 +85,14 @@ input, select, textarea {
 
 .highlight {
     color: #e8b923;
-    font-weight: bold;
+    font-weight: bold; /* Fett */
 }
 
 .searchbar{
     font-family: "Poppins", Arial, sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* Design für kleinere Bildschirme */
     .container {
         padding: 10px;
     }

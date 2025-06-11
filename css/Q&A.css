@@ -1,99 +1,98 @@
-body {
-    background-color: #0a0a20;
-    color: #e0e0e0;
+body { 
+    background-color: #0a0a20; 
+    color: #e0e0e0; 
 }
 
-.container {
+.container { 
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
-header h1 {
-    color: #e8b923;
-    border-bottom: 1px solid #4d9be6;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    font-family: "Poppins", Arial, sans-serif;
+header h1 { /* Überschrift im Header */
+    color: #e8b923; 
+    border-bottom: 1px solid #4d9be6; 
+    padding-bottom: 10px; 
+    text-transform: capitalize; /* Erster Buchstabe jedes Wortes Großgeschrieben */
+    font-family: "Poppins", Arial, sans-serif; 
 }
 
-.subtitle {
-    font-style: italic;
-    color: #4d9be6;
-    margin-bottom: 30px;
-    text-transform: lowercase;
+.subtitle { 
+    font-style: italic; /* Kursiv */
+    color: #4d9be6; 
+    text-transform: lowercase; /* Alles Kleingeschrieben */
 }
 
-.faq-section {
-    margin: 40px 0;
+.faq-section { 
+    margin: 40px 0; 
 }
 
 .faq-item {
     margin-bottom: 10px;
-    border: 1px solid #4d9be6;
-    border-radius: 5px;
-    overflow: hidden;
+    border: 1px solid #4d9be6; /* Blauer Rahmen */
+    border-radius: 5px; 
+    overflow: hidden; /* Inhalt bleibt im Rahmen */
 }
 
-.faq-question {
-    width: 100%;
-    padding: 15px;
-    text-align: left;
+.faq-question { 
+    width: 100%; 
+    padding: 15px; 
+    text-align: left; 
     background: rgba(11, 61, 145, 0.2);
-    border: none;
-    color: #e8b923;
-    cursor: pointer;
+    border: none; 
+    color: #e8b923; 
+    cursor: pointer; /* Zeiger beim Überfahren */
     display: flex;
-    align-items: center;
-    font-family: "Poppins", Arial, sans-serif; 
+    align-items: center; 
+    font-family: "Poppins", Arial, sans-serif;
 }
 
-.faq-question .icon {
-    margin-right: 10px;
-    font-weight: bold;
-    text-transform: capitalize;
+.faq-question .icon { /* Symbol vor der Frage */
+    margin-right: 10px; 
+    font-weight: bold; 
+    text-transform: capitalize; /* Erster Buchstabe Großgeschreiben */
 }
 
-.faq-answer {
+.faq-answer { 
     padding: 0 15px;
-    max-height: 0;
+    max-height: 0; /* Normalerweise versteckt */
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    background: rgba(0, 0, 0, 0.3);
+    transition: max-height 0.3s ease; /* Ausklappen Animiert */
+    background: rgba(0, 0, 0, 0.3); 
     font-family: "Poppins", Arial, sans-serif; 
 }
 
-.faq-item.active .faq-answer {
-    padding: 15px;
+.faq-item.active .faq-answer {  /* Wenn aktiv, dann sichtbar */
+    padding: 15px; 
     max-height: 300px;
 }
 
-.help-section {
-    margin-top: 50px;
+.help-section { /* Hilfe-Sektion am Ende */
+    margin-top: 50px; 
     text-align: center;
-    border-top: 1px dashed #e8b923;
-    padding-top: 20px;
+    border-top: 1px dashed #e8b923; /* Gelbe gestrichelte Linie oben */
+    padding-top: 20px; 
     font-family: "Poppins", Arial, sans-serif; 
 }
 
 h2 {
-    font-family: 'Starjedi', Arial, sans-serif;
-    text-transform: lowercase;
+    font-family: 'Starjedi', Arial, sans-serif; 
+    text-transform: lowercase; /* Alles Kleingeschreiben */
 }
 
-.droid-icon {
-    width: 80px;
-    margin-top: 20px;
-    filter: hue-rotate(180deg) brightness(1.2);
+.droid-icon { /* Droiden-Symbol */
+    width: 80px; 
+    margin-top: 20px; 
+    filter: hue-rotate(180deg) brightness(1.2); /* Farben- und Helligkeitsanpassung */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* Design für kleine Bildschirme */
     .container {
-        padding: 10px;
+        padding: 10px;     /* Weniger Padding */
     }
     
     .faq-question {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Kleinere Schrift */
     }
 }
 
@@ -101,7 +100,7 @@ h2 {
     font-family: 'Courier New', monospace;
 }
 
-.holo-chat {
+.holo-chat { /* Spezielles Styling Holo-Chat-Text */
     color: #e8b923;
     font-weight: bold;
 }

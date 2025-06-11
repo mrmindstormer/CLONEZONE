@@ -2,10 +2,10 @@ body {
     background-color: #0a0a20;
     color: #e0e0e0;
     font-family: "Poppins", Arial, sans-serif;
-    text-transform: none;
+    text-transform: none;                       /* Deaktiviert die automatische Kleinschreibung aus dem HTML Dokument */
 }
 
-header p {
+header p {                                      /*Stil für den Text im Header-Bereich*/
     text-align: center;
     font-size: 1.6rem;
     color: #4d9be6;
@@ -34,8 +34,8 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {         /* Design für mobile Geräte (max. 600px Bildschirmbreite) */
     .container {
-        padding: 10px;
+        padding: 10px;              /* Weniger Padding auf mobilen Geräten */
     }
 }
