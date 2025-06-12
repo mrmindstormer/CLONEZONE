@@ -17,13 +17,18 @@
             <ul>
                 <li>
                     <a href="index.html">Startseite</a>
-                </li>
-                <li><a href="products.html">Produkte</a>
                     <ul class="dropdown">
-                        <li><a href="#">Rüstung</a></li>
-                        <li><a href="#">Waffen</a></li>
-                        <li><a href="#">Fahrzeuge</a></li>
-                        <li><a href="#">Sonstiges</a></li>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="index.html#Auswahl">Auswahl</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html">Produkte</a>
+                    <ul class="dropdown">
+                        <li><a href="products.html#Rüstung">Rüstung</a></li>
+                        <li><a href="products.html#Waffen">Waffen</a></li>
+                        <li><a href="products.html#Fahrzeuge">Fahrzeuge</a></li>
+                        <li><a href="products.html#Sonstiges">Sonstiges</a></li>
                     </ul>
                 <li><a href="about.html">Über Uns</a></li>
                 <li><a href="QandA.html">Q&A</a></li>
@@ -43,7 +48,7 @@
         <header>
 
             <h1>clonezone</h1>
-            <svg class="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
+            <svg class="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="auto" viewBox="0 0 600 600">
                 <circle fill="none" stroke="currentColor" stroke-width="31.8518" cx="300" cy="300" r="284.0741"/>
                 <circle cx="300" cy="300" r="93.2122"/><g id="Half"><g id="Elmt">
                 <path d="M164.331,122.014A223.797,223.797 0 0,1 270.077,78.2125
@@ -57,7 +62,7 @@
 
         </header>
             
-        <main>
+        <main id="Auswahl">
 
             <section class="hero">
                 <h2>Willkommen bei <span class="starjedi-font">clonezone</span></h2>
@@ -69,13 +74,13 @@
                 <table class="produkt-tabelle">
                     <tr>
                         <td>
-                            <a href="products.html#ruestung" class="produkt-link">
+                            <a href="products.html#Rüstung" class="produkt-link">
                                 <p>Rüstung</p>
                                 <img id="Helm" src="../img/Startseitenauswahl/Helm.png" alt="Phase 2 Helm 501st Legion">
                             </a>
                         </td>
                         <td>
-                            <a href="products.html#waffen" class="produkt-link">
+                            <a href="products.html#Waffen" class="produkt-link">
                                 <p>Waffen</p>
                                 <img src="../img/Startseitenauswahl/Blaster.webp" alt="DC-17 Blaster">
                             </a>
@@ -83,13 +88,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="products.html#fahrzeuge" class="produkt-link">
+                            <a href="products.html#Fahrzeuge" class="produkt-link">
                                 <p>Fahrzeuge</p>
                                 <img src="../img/Startseitenauswahl/Sternenjäger.png" alt="ARC-170 Sternenjäger">
                             </a>
                         </td>
                         <td>
-                            <a href="products.html#sonstiges" class="produkt-link">
+                            <a href="products.html#Sonstiges" class="produkt-link">
                                 <p>Sonstiges</p>
                                 <img src="../img/Startseitenauswahl/Spinnendroide.png" alt="Spinnendroide">
                             </a>
@@ -99,7 +104,9 @@
             </section>
 
             <div class="slide-in-text" id="infoBox">
-              <p>Hier ist dein Textblock, der von der Seite hereinschiebt!</p>
+                <h4>Neuigkeiten</h4>
+                <p>Wir haben unser Sortiment erweitert! Schau dir die neuen Produkte in der <a href="products.html">Produktübersicht</a> an.</p>
+              <p></p>
             </div>
 
         </main>

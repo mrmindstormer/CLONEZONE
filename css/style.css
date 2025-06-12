@@ -1,4 +1,4 @@
-* {
+* { /* Reset aller Elemente */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +8,12 @@ html {
     font-size: 16px;
 }
 
-@font-face {
+@font-face { /* starwars Schriftart: Starjedi*/
     font-family: 'Starjedi';
     src: url('../fonts/Starjedi.ttf') format('truetype');
 }
 
-.container {
+.container { 
     font-family: 'Starjedi', Arial, sans-serif;
 }
 
@@ -73,11 +73,11 @@ nav li:hover a {
   color: black;
 }
 
-nav li:hover ul.dropdown a {
+nav li:hover ul.dropdown a {  /* Dropdown-Menü bei Hover */
   color: #e8b923;
 }
 
-nav ul.dropdown {
+nav ul.dropdown {   /* Dropdown-Menü im nav*/
   display: none;
   position: absolute;
   top: 100%;
@@ -88,7 +88,7 @@ nav ul.dropdown {
   z-index: 10;
 }
 
-nav li:hover > ul.dropdown {
+nav li:hover > ul.dropdown { /* Dropdown-Menü anzeigen bei Hover */
   display: flex;
 }
 
@@ -107,13 +107,13 @@ nav ul.dropdown li:hover a {
   color: black;
 }
 
-.searchbar {
+.searchbar { /* Suchleiste im nav */
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
 
-.searchbar input[type="text"] {
+.searchbar input[type="text"] { /* Eingabefeld der Suchleiste */
   padding: 8px 12px;
   border: none;
   border-radius: 8px 0 0 8px;
@@ -137,40 +137,3 @@ nav ul.dropdown li:hover a {
 .searchbar button:hover {
   background: #ffd700;
 }
-
-
-/*nav {
-    width: 100%;
-    background-color: #1a1a3a;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #e8b923;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-nav ul li a:hover {
-    background: #4d9be6;
-    color: #fff;
-}*/

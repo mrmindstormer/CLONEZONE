@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLONEZONE | Produkte</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/products-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <div class="floating-actions">
+            <button id="wishlistBtn" title="Merkliste öffnen">
+                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg"> <!-- Stern-Symbol für Merkliste -->
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+            </button>
+            <button id="cartBtn" title="Warenkorb öffnen">🛒</button>
+        </div>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startseite</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="index.html#Auswahl">Auswahl</a></li>
+                    </ul>
+                </li>
+                <li><a href="products.html">Produkte</a>
+                    <ul class="dropdown">
+                        <li><a href="products.html#Rüstung">Rüstung</a></li>
+                        <li><a href="products.html#Waffen">Waffen</a></li>
+                        <li><a href="products.html#Fahrzeuge">Fahrzeuge</a></li>
+                        <li><a href="products.html#Sonstiges">Sonstiges</a></li>
+                    </ul>
+                <li><a href="about.html">Über Uns</a></li>
+                <li><a href="QandA.html">Q&A</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <form class="searchbar">
+                <input type="text" placeholder="Suche...">
+                <button type="submit" class="search-btn" aria-label="Suche">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"> <!-- Lupensymbol -->
+                    <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                    <line x1="14.2" y1="14.2" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+            </form>
+        </nav>
+
+        <header>
+            <h1>Willkommen im Shop</h1>
+            <p>Hier findest du die richtigen Produkte für jede Mission und jeden Planet!</p>
+        </header>
+
+        <main>
+
+            <section class="Produktliste" id="Rüstung"> 
+
+                <h3>Rüstung</h3>
+                <div class="Zitat-wrapper">
+                    <span class="Zitat">Hier findest du die besten Rüstungen der Galaxis, egal ob für den Kampf oder für den Alltag.</span>
+                </div>
+                
+                <article class="Produkt" id="Phase-1">
+                    <img src="../img/Produkte/Rüstung-Phase-1.jpg" alt="Phase 1 Rüstung">
+                    <div class="Produkt-Info">
+                        <h2>Phase 1 Rüstung</h2>
+                        <p>Old but gold</p>
+                        <p class="Preis"> 6.000 Credits</p>
+                        <div class="Farbauswahl">
+                            <span class="color weiß"></span>
+                            <span class="color gelb"></span>
+                            <span class="color blau"></span>
+                            <span class="color grün"></span>
+                            <span class="color rot"></span>
+                        </div>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="Phase-2">
+                    <img src="../img/Produkte/Rüstung-Phase-2.jpg" alt="Phase 2 Rüstung">
+                    <div class="Produkt-Info">
+                        <h2>Phase 2 Rüstung</h2>
+                        <p>Die meistverkaufte Rüstung der Galaxis!</p>
+                        <p class="Preis"> 8.000 Credits</p>
+                        <div class="Farbauswahl">
+                            <span class="color weiß"></span>
+                            <span class="color gelb"></span>
+                            <span class="color blau"></span>
+                            <span class="color grün"></span>
+                            <span class="color rot"></span>
+                        </div>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="Mando">
+                    <img src="../img/Produkte/Mando-Rüstung.jpg" alt="Mandolorianische Rüstung">
+                    <div class="Produkt-Info">
+                        <h2>Speacial offer: Mandolorianische Rüstung</h2>
+                        <p>Die stärkste Rüstung der Galaxis mit 70% Carbonit</p>
+                        <p class="Preis"> 12.000 Credits</p>
+                        <div class="Farbauswahl">
+                            <span class="color weiß"></span>
+                            <span class="color gelb"></span>
+                            <span class="color blau"></span>
+                            <span class="color grün"></span>
+                            <span class="color rot"></span>
+                        </div>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="Produktliste" id="Waffen">
+
+                <h3>Waffen</h3>
+                <div class="Zitat-wrapper">
+                    <span class="Zitat">Die besten Waffen für jeden Einsatz, egal ob im Nahkampf oder auf Distanz.</span>
+                </div>
+
+                <article class="Produkt" id="DC-15">
+                    <img src="../img/Produkte/DC-15-Blaster.jpg" alt="DC-15 Blaster">
+                    <div class="Produkt-Info">
+                        <h2>DC-15 Blaster</h2>
+                        <p>Der Standard-Blaster der Klonarmee</p>
+                        <p class="Preis"> 1.500 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="DC-17">
+                    <img src="../img/Produkte/DC-17-Blaster.avif" alt="DC-17 Blaster">
+                    <div class="Produkt-Info">
+                        <h2>DC-17 Blaster</h2>
+                        <p>Der kompakte Blaster für den Nahkampf</p>
+                        <p class="Preis"> 2.000 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="DC-15S">
+                    <img src="../img/Produkte/DC15S-Blaster.jpg" alt="DC-15S Blaster">
+                    <div class="Produkt-Info">
+                        <h2>DC-15S Blaster</h2>
+                        <p>Der vielseitige Blaster für jede Situation</p>
+                        <p class="Preis"> 1.800 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="Produktliste" id="Fahrzeuge">
+
+                <h3>Fahrzeuge</h3>
+                <div class="Zitat-wrapper">
+                    <span class="Zitat">Die besten Fahrzeuge für jede Mission, egal ob im All oder auf dem Boden.</span>
+                </div>
+
+                <article class="Produkt" id="AT-TE">
+                    <img src="../img/Produkte/AT-TE.webp" alt="AT-TE">
+                    <div class="Produkt-Info">
+                        <h2>AT-TE</h2>
+                        <p>Der All-Terrain Tactical Enforcer</p>
+                        <p class="Preis"> 50.000 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article> 
+            
+                <article class="Produkt" id="ARC-170">
+                    <img src="../img/Produkte/ARC-170.jpg" alt="ARC-170 Sternenjäger">
+                    <div class="Produkt-Info">
+                        <h2>ARC-170 Sternenjäger</h2>
+                        <p>Der effizienteste und am meisten produzierte Sternenjäger der Rupublik</p>
+                        <p class="Preis"> 30.000 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="Speeder">
+                    <img src="../img/Produkte/Speeder.webp" alt="Speeder">
+                    <div class="Produkt-Info">
+                        <h2>Speeder</h2>
+                        <p>Der schnelle und wendige Speeder für jeden Einsatz</p>
+                        <p class="Preis"> 15.000 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="Produktliste" id="Sonstiges">
+
+                <h3>Sonstiges</h3>
+                <div class="Zitat-wrapper">
+                    <span class="Zitat">Hier findest du alles, was du für deine Missionen brauchst, egal ob Ausrüstung oder Zubehör.</span>
+                </div>
+
+                <article class="Produkt" id="Holocron">
+                    <img src="../img/Produkte/Holocron.jpeg" alt="Holocron">
+                    <div class="Produkt-Info">
+                        <h2>Holocron</h2>
+                        <p>Preiswerte Wohnzimmerdeko</p>
+                        <p class="Preis"> 500.000 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Produkt" id="Spinnendroidenspielzeug">
+                    <img src="../img/Produkte/Spinnendroide.jpg" alt="Spinnendroide aus Lego">
+                    <div class="Produkt-Info">
+                        <h2>Spinnendroidenspielzeug</h2>
+                        <p>Möge der Klemmbaustein mit dir sein!</p>
+                        <p class="Preis"> 800 Credits</p>
+                        <div class="button-row">
+                            <button class="buy-btn">Jetzt kaufen</button>
+                            <button class="wishlist-btn" title="Zur Merkliste hinzufügen">
+                                <svg class="Stern" width="28" height="28" viewBox="0 0 24 24" fill="#e8b923" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg> Merken
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Merkliste Panel -->
+            <div id="wishlistPanel" class="side-panel">
+                <h3>Merkliste</h3>
+                <p>Deine gemerkten Produkte erscheinen hier.</p>
+                <button onclick="document.getElementById('wishlistPanel').style.display='none'">Schließen</button>
+            </div>
+
+            <!-- Warenkorb Panel -->
+            <div id="cartPanel" class="side-panel">
+                <h3>Warenkorb</h3>
+                <p>Deine ausgewählten Produkte erscheinen hier.</p>
+                <button onclick="document.getElementById('cartPanel').style.display='none'">Schließen</button>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Du vermisst etwas oder möchtest zusätzliche Modifikationen? Schreib uns doch eine Nachricht über das <a href="contact.html">Kontaktformular</a> </p>
+        </footer>
+
+        <script src="../script/wishlist.js"></script>
+
+    </body>
+
+</html>

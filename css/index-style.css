@@ -9,7 +9,7 @@ main {
   padding-bottom: 80px;
 }
 
-header {
+header { /* Header der gefixted ist um main mit höherem z index darüber zu scrollen  */
   background: #000000 url(../img/header/Hintergrund.jpg) no-repeat top;
   background-size: cover;
   width: 100vw;
@@ -31,34 +31,37 @@ header h1 {
   margin-left: 2vw;
 }
 
-.Icon {
+.Icon { /* Starwars Icon im Header */
   fill:#e8b923;
   color:#e8b923;
-  margin-left: 4vw;
-  margin-top:auto;
-  margin-bottom: auto;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  width: 20vw;
+  height: auto;
+  display: block;
 }
 
 nav {
-  margin-top: 100vh;
+  margin-top: 75vh;
 }
 
-.hero {
-  padding-top: 100px;
+.hero { /* Startbereich der Website*/
+  background: #1a1a3a;
   text-align: center;
   color: #e8b923; 
+  padding-bottom: 30px;
 }
 
 .hero h2 {
-  font-size: 4rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: 'Starjedi', Arial, sans-serif;
 }
 
 .hero p {
-  font-size: 1.5rem;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #4d9be6;
+  font-size: 1.2rem;
+  color: #ffd700;
 }
 
 .starjedi-font {
@@ -77,9 +80,11 @@ nav {
   text-transform: lowercase;
   font-family: 'Starjedi', Arial, sans-serif;
   font-style: italic;
+  padding-top: 30px;
 }
 
-.Produkte td p {
+/*  Produktboxen als tabelle, welche dann zu den Produkten führen*/
+.Produkte td p { 
   font-size: 1.5rem;
   color: #e8b923;
   margin: 20px;
@@ -106,6 +111,7 @@ nav {
   border-radius: 5px;
   padding-top: 20px;
   height: 200px;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
 }
 
 .Produkte td img {
@@ -122,6 +128,7 @@ nav {
 
 .Produkte td:hover {
   background-color:  #4d9be6;
+  transform: scale(1.08);
 }
 
 .produkt-link {
@@ -152,7 +159,7 @@ footer a:hover {
   color: #4d9be6;
 }
 
-.slide-in-text {
+.slide-in-text { /* Text, der von rechts hereinslidet */
   position: fixed;
   top: 30%;
   right: -400px; /* Start außerhalb des Bildschirms */
@@ -166,6 +173,27 @@ footer a:hover {
   z-index: 99;
 }
 
-.slide-in-text.visible {
+.slide-in-text.visible { /* Klasse, die hinzugefügt wird, wenn der Text sichtbar sein soll */
   right: 0;
+}
+
+.slide-in-text h4 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.slide-in-text p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.slide-in-text a {
+  color: #e8b923;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.slide-in-text a:hover {
+  text-decoration: none;
+  color: #4d9be6;
 }
